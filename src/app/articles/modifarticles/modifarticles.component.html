@@ -1,0 +1,39 @@
+<div>
+  <form (ngSubmit)="modifarticles()">
+  <div class="form-group">
+    <label for="Reference">Reference</label>
+    <input type="text" class="form-control" id="Reference" value="reference" aria-describedby="text" placeholder="Reference" name = "reference" [(ngModel)]="articles.reference">
+  </div>
+  <pre></pre>
+  <div class="form-group">
+    <label for="Reference">Désignation</label>
+    <input type="text" class="form-control" id="Reference" aria-describedby="text" value="designation" placeholder="Désignation" name = "designation"[(ngModel)]="articles.designation">
+  </div>
+  <pre></pre>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Image Article</label>
+    <input type="text" class="form-control"   id="exampleInputEmail1"  value ="articles.imageart" placeholder="Image" name = "articles.imageart"[(ngModel)]="articles.imageart">
+  </div>
+  <pre></pre>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Marque </label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="articles.marque" placeholder="articles.marque" name= "marque"[(ngModel)]="articles.marque">
+  </div>
+  <pre></pre>
+  <div class="form-group">
+    <label for="Prix">Prix</label>
+    <input type="text" class="form-control" id="Prix" aria-describedby="emailHelp" placeholder="Prix" value="articles.prix" name = "articles.prix" [(ngModel)]="articles.prix">
+  </div>
+  <pre></pre>
+  <div class="form-group">
+    <label for="Quantité">Quantité</label>
+    <input type="text" class="form-control" id="Quantité" aria-describedby="emailHelp" placeholder="Quantité" value="articles.qtestock" name="qtestock"[(ngModel)]="articles.qtestock">
+  </div>
+  <pre></pre>
+
+
+
+  <button type="submit" class="btn btn-primary" >Submit</button>
+</form>
+</div>

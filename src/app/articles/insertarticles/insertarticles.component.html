@@ -1,0 +1,47 @@
+<div>
+  <form (ngSubmit)="ajoutarticles()">
+  <div class="form-group">
+    <label for="Reference">Reference</label>
+    <input type="text" class="form-control" id="Reference" aria-describedby="text" placeholder="Reference" name = "reference" [(ngModel)]="articles.reference">
+  </div>
+  <pre></pre>
+  <div class="form-group">
+    <label for="Reference">Désignation</label>
+    <input type="text" class="form-control" id="Reference" aria-describedby="text" placeholder="Désignation" name = "designation"[(ngModel)]="articles.designation">
+  </div>
+  <pre></pre>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Image Article</label>
+    <input type="text" class="form-control"   id="exampleInputEmail1"  placeholder="Image" name = "imageart"[(ngModel)]="articles.imageart">
+  </div>
+  <pre></pre>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Marque </label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Marque" name= "marque"[(ngModel)]="articles.marque">
+  </div>
+  <pre></pre>
+  <div class="form-group">
+    <label for="Prix">Prix</label>
+    <input type="text" class="form-control" id="Prix" aria-describedby="emailHelp" placeholder="Prix" name = "prix" [(ngModel)]="articles.prix">
+  </div>
+  <pre></pre>
+  <div class="form-group">
+    <label for="Quantité">Quantité</label>
+    <input type="text" class="form-control" id="Quantité" aria-describedby="emailHelp" placeholder="Quantité" name="qtestock"[(ngModel)]="articles.qtestock">
+  </div>
+  <pre></pre>
+
+<div class="mb-3">
+  Sous categorie
+<select name="scategoriesID" id="" class="form-control" [(ngModel)]="articles.scategoriesID">
+<option *ngFor="let sd of scategories" value="{{sd.id}}">
+  {{sd.nomscategorie}}
+</option>
+</select>
+</div>
+
+
+  <button type="submit" class="btn btn-primary" >Submit</button>
+</form>
+</div>
